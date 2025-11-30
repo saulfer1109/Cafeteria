@@ -32,6 +32,7 @@ header h1 {
   margin: 2rem auto;
 }
 
+/* === HORARIOS === */
 .horarios {
   background-color: #fff;
   text-align: center;
@@ -49,7 +50,7 @@ header h1 {
   border-collapse: collapse;
   width: 80%;
   max-width: 600px;
-  border: 2px solid #d4af37;
+  border: 2px solid #d4af37;
 }
 
 .horarios th,
@@ -65,10 +66,6 @@ header h1 {
 }
 
 .horarios tr:nth-child(even) {
-  background-color: #fff6f8;
-}
-
-.horarios tr:nth-child(even) {
   background-color: #fff6f8;
 }
 
@@ -79,10 +76,10 @@ header h1 {
   font-weight: bold;
 }
 
-/* === Sección Acerca de === */
+/* === SECCIÓN ACERCA DE === */
 .acerca {
   background-color: #ffe4e9;
-  padding: 60px 20px;
+  padding: 60px 20px;
 }
 
 .acerca h2 {
@@ -92,39 +89,37 @@ header h1 {
 }
 
 /* Contenedor de las imagenes*/
-.imagenes{
-  display:flex;
-  width:300%;
+.imagenes {
+  display: flex;
+  width: 300%;
   transition: transform 0.5s ease;
 }
 
-.imagenes img{
-  width:100%;
+.imagenes img {
+  width: 100%;
   object-fit: cover;
 }
 
-/* ===Flechas=== */
-
-.navegacion{
-  position:absolute;
-  top:50%;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
+/* === Flechas === */
+.navegacion {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   transform: translateY(-50%);
 }
 
-.btn{
-  background-color: rgba(255,255,255,0.7);
-  color:#c94f7c;
-  border-radius:2px solid #ffbe33;
-  padding:5px 12px;
-  cursor:pointer;
-  border-radius:50%;
+.btn {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #c94f7c;
+  border-radius: 50%; /* Corregido a 50% directo */
+  border: 2px solid #ffbe33; /* Separado border-radius de border */
+  padding: 5px 12px;
+  cursor: pointer;
   font-size: 2rem;
   transition: 0.3s;
 }
-
 
 /* Contenedor principal de imagen y texto */
 .contenido-acerca {
@@ -132,9 +127,8 @@ header h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 30px;
 }
-
 
 .mision {
   margin-top: 15px;
@@ -143,8 +137,9 @@ header h1 {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 /* Imagen */
 .contenido-acerca img {
   width: 300px;
@@ -157,56 +152,54 @@ html {
   max-width: 500px;
   color: #333;
   line-height: 1.6;
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia', serif;
 }
 
-
-/*# seccion del mapa */
-.mapa{
+/* === SECCIÓN MAPA === */
+.mapa {
   background-color: #fff;
-  text-align:center;
-  padding:40px 20px;
+  text-align: center;
+  padding: 40px 20px;
   border-top: 3px solid #ffbe33;
 }
-.mapa h2{
+.mapa h2 {
   color: #c94f7c;
   margin-bottom: 20px;
 }
-.mapa iframe{
-  width:90%;
-  max-width:350px;
-  height:400px;
-  border:3px solid #ffbe33;
-  border-radius:10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.mapa iframe {
+  width: 90%;
+  max-width: 350px;
+  height: 400px;
+  border: 3px solid #ffbe33;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Carrusel base */
+/* === CARRUSEL === */
 .carrusel {
-    background-color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-    border-top: 3px solid #d4af37; /* línea dorada */
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 3px solid #d4af37;
 }
 
 .carrusel h2 {
-    color: #c94f7c; /* rosa fuerte */
-    font-family: 'Georgia', serif;
-    margin-bottom: 25px;
+  color: #c94f7c;
+  font-family: 'Georgia', serif;
+  margin-bottom: 25px;
 }
 
 .contenedor-carrusel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    border: 3px solid #d4af37;
-    border-radius: 10px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-
-/* === SECCIONES === */
+/* === SECCIONES GENERALES === */
 section {
   margin-bottom: 3rem;
 }
@@ -240,7 +233,7 @@ article {
   background: white;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
@@ -276,7 +269,7 @@ table th {
   background: #f4f4f4;
 }
 
-/* Pills (etiquetas tipo "nuevo") */
+/* Pills */
 .pill {
   display: inline-block;
   background: #e67e22;
@@ -291,7 +284,8 @@ form div {
   margin-bottom: 1rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.7rem;
   border: 1px solid #ccc;
@@ -312,49 +306,45 @@ button:hover {
   background: #563828;
 }
 
-.video, .video2 {
+/* === VIDEO === */
+.video,
+.video2 {
   text-align: center;
   background-color: #fff;
   padding: 60px 20px;
   border-top: 3px solid #d4af37;
 }
 
-.video h2 {
-  color: #c94f7c;
-  font-family: Georgia, serif;
-  margin-bottom: 25px;
-}
-
+.video h2,
 .video2 h2 {
   color: #c94f7c;
   font-family: Georgia, serif;
   margin-bottom: 25px;
 }
 
-.video video, .video2 video {
+.video video,
+.video2 video {
   width: 100%;
   max-width: 600px;
   border: 3px solid #d4af37;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.video p, .video2 p {
+.video p,
+.video2 p {
   margin-top: 15px;
   color: #555;
 }
 
-
-/*Contenedor adaptable para el iframe*/
-.contenedor-video{
+.contenedor-video {
   position: relative;
   padding-bottom: 36.25%;
   height: 0;
   overflow: hidden;
   border: 3px solid #d4af37;
   border-radius: 10px;
-  box-shadow: 0 4px 10 px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
@@ -372,21 +362,20 @@ button:hover {
   margin: 0 auto;
 }
 
-
-.container-video2 iframe {
+.contenedor-video2 iframe {
   position: absolute;
-  top: center;
-  left: center;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-/* === Seccion de musica === */
+/* === MÚSICA === */
 .musica {
   text-align: center;
   background-color: white;
   padding: 60px 20px;
-  border-top: 3px solid d4af37;
+  border-top: 3px solid #d4af37;
 }
 
 .musica h2 {
@@ -401,19 +390,14 @@ button:hover {
   max-width: 400px;
   border: 3px solid #d4af37;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #333;
 }
 
-.musica p{
+.musica p {
   margin-top: 15px;
   color: #333;
 }
-
-
-
-
-
 
 /* === FOOTER === */
 footer {
@@ -438,7 +422,8 @@ footer small {
   margin-top: 0.5rem;
   color: #aaa;
 }
-.btn-footer{
+
+.btn-footer {
   background-color: #ffbe33;
   color: #ffffff;
   padding: 10px 20px;
@@ -446,114 +431,148 @@ footer small {
   display: inline-block;
   margin: 10px 0;
 }
-.btn-footer:hoover{
+
+.btn-footer:hover {
   background-color: #e69c00;
 }
 
-.footer p{
+.footer p {
   color: #ffffff;
-  margin: 10;
+  margin: 10px 0;
   font-weight: bold;
-
 }
-/* === GRID REPOSTERIA === */
-.grid-reposteria{
+
+/* === SECCIÓN REPOSTERÍA (NUEVO ESTILO AGREGADO) === */
+.reposteria {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-top: 3px solid #d4af37;
+}
+
+.reposteria h2 {
+  color: #c94f7c;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+/* === GRID REPOSTERÍA === */
+.grid-reposteria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
+
 /* Contenedor de la tarjeta */
-.tarjeta{
-  perspective:1000px;
+.tarjeta {
+  perspective: 1000px;
+  height: 320px; /* Altura fija para la tarjeta */
 }
-/* Elemento interior que gira */
-.tarjeta.inner{
-  position:relative;
-  width:100%;
-  height:320%;
-  text-align:center;
+
+/* Elemento interior que gira (CORREGIDO: .tarjeta-inner en lugar de .tarjeta.inner) */
+.tarjeta-inner {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ajustado al 100% del padre */
+  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   border-radius: 12px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.tarjeta:hover .tarjeta.inner{
+.tarjeta:hover .tarjeta-inner {
   transform: rotateY(180deg);
 }
+
 /* Caras de la tarjeta */
-.tarjeta-front, .tarjeta-back{
-  position:absolute;
-  width:100%;
-  height:100%;
+.tarjeta-front,
+.tarjeta-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
   border-radius: 12px;
   overflow: hidden;
 }
-.tarjeta-front{
-  background-color:#fff;
+
+.tarjeta-front {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
-.tarjeta-front img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
+
+.tarjeta-front img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-.tarjeta-front h3{
-  margin:10px;
-  color:#6f4e37;
+
+.tarjeta-front h3 {
+  margin: 10px;
+  color: #6f4e37;
 }
+
 /* Parte trasera de la tarjeta */
-.tarjeta-back{
-  background-color:#ffe4e9;
-  color:#c94f7c;
+.tarjeta-back {
+  background-color: #ffe4e9;
+  color: #c94f7c;
   transform: rotateY(180deg);
-  padding:20px;
+  padding: 20px;
+  display: flex; /* Para centrar contenido */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 }
-.tarjeta-back h3{
-  margin-bottom:10px;
+
+.tarjeta-back h3 {
+  margin-bottom: 10px;
 }
-.tarjeta-back p{
-  margin:5px;
+
+.tarjeta-back p {
+  margin: 5px;
 }
-.nota-barista{
-  margin-top:10px;
+
+.nota-barista {
+  margin-top: 10px;
   font-style: italic;
-  color:#d4af37;
+  color: #d4af37;
 }
 
 /* === PROMO === */
-.promo{
-  background-color:#fff;
-  text-align:center;
-  padding:40px 20px;
-  border-top:3px solid #d4af37;
+.promo {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 3px solid #d4af37;
   border-bottom: 3px solid #d4af37;
 }
-.promo-titulo{
-  color:#c94f7c;
+
+.promo-titulo {
+  color: #c94f7c;
   font-weight: bold;
   margin: 5px;
 }
-.promo-detalle{
+
+.promo-detalle {
   margin: 5px 0;
-  color:#333;
+  color: #333;
 }
-.promo-tiempo{
-  color:#d4af37;
+
+.promo-tiempo {
+  color: #d4af37;
   font-weight: bold;
-  margin:5px 0;
+  margin: 5px 0;
 }
 
 /* === BANNER PROMOCIONAL === */
-.banner-promo{
+.banner-promo {
   background-color: #9ad;
-  color:white;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,14 +580,16 @@ footer small {
   padding: 8px 16px;
   font-size: 0.95rem;
 }
-.bannner-texto{
+
+.bannner-texto {
   text-align: center;
 }
-.btn-cerrar-banner{
-  background:transparent;
+
+.btn-cerrar-banner {
+  background: transparent;
   border: 2px solid white;
   border-radius: 50%;
-  color:white;
+  color: white;
   width: 28px;
   height: 28px;
   cursor: pointer;
@@ -579,9 +600,7 @@ footer small {
   justify-content: center;
 }
 
-.btn-cerrar-banner:hover{
+.btn-cerrar-banner:hover {
   background-color: white;
   color: #333;
 }
-
-

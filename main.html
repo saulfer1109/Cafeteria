@@ -10,14 +10,36 @@
   <body>
     <header>
       <h1>Cafetería Saul</h1>
-      <p>El mejor café de Hermosillo ☕</p>
+      <p>Tradición y elegancia en cada taza ☕</p>
     </header>
 
     <main class="container">
-      <!-- === SECCIÓN MENÚ === -->
+      
+      <section id="acerca" class="acerca-de">
+        <h2>Nuestra Historia</h2>
+        <div class="contenido-acerca">
+          <img
+            src="/images/galeria1.webp"
+            alt="Interior de la cafetería estilo inglés"
+          />
+          <div class="texto">
+            <p>
+              Fundada en 2025, <strong>Cafetería Saul</strong> nace inspirada en las clásicas 
+              <em>Tea Houses</em> británicas, trayendo un aire de sofisticación victoriana 
+              al corazón de Hermosillo.
+            </p>
+            <p>
+              Nuestro concepto fusiona la elegancia del viejo mundo con la calidez del desierto. 
+              Creemos que el café no es solo una bebida, sino un ritual de pausa y disfrute.
+            </p>
+            <p><strong>Misión:</strong> Brindar un refugio de calma y distinción donde cada sorbo cuenta una historia.</p>
+          </div>
+        </div>
+      </section>
+
       <section>
-        <h2 id="titulo-menu">Nuestro Menú</h2>
-        <p class="muted">Bebidas y panes del día</p>
+        <h2 id="titulo-menu">Selección de Bebidas</h2>
+        <p class="muted">Nuestros clásicos y especialidades de la casa</p>
 
         <div class="grid grid-3">
           <article>
@@ -26,14 +48,13 @@
                 src="/images/cafe-expresso.webp"
                 alt="Espresso servido en taza"
                 width="100%"
-                height="auto"
+                height="200"
+                style="object-fit: cover;"
               />
-              <figcaption>Espresso simple</figcaption>
+              <figcaption>Espresso Imperial</figcaption>
             </figure>
-            <h3>Espresso</h3>
-            <p>
-              Extracción precisa, tueste medio <span class="pill">Nuevo</span>
-            </p>
+            <h3>Espresso Imperial</h3>
+            <p>Extracción perfecta, notas de nuez y cacao. <span class="pill">Clásico</span></p>
             <table>
               <thead>
                 <tr>
@@ -43,7 +64,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Simple</td>
+                  <td>Sencillo</td>
                   <td>$35</td>
                 </tr>
                 <tr>
@@ -60,12 +81,13 @@
                 src="/images/latte.jpg"
                 alt="Latte"
                 width="100%"
-                height="auto"
+                height="200"
+                style="object-fit: cover;"
               />
-              <figcaption>Latte Clásico</figcaption>
+              <figcaption>Latte Victoriano</figcaption>
             </figure>
-            <h3>Latte</h3>
-            <p>Suave, con leche vaporizada</p>
+            <h3>Latte Victoriano</h3>
+            <p>Suave mezcla de espresso con leche texturizada.</p>
             <table>
               <thead>
                 <tr>
@@ -89,15 +111,16 @@
           <article>
             <figure>
               <img
-                src="/images/Croissant.jpg"
-                alt="Croissant de Mantequilla"
+                src="/images/london tea.jpg"
+                alt="Taza de Té Earl Grey"
                 width="100%"
-                height="auto"
+                height="200"
+                style="object-fit: cover;"
               />
-              <figcaption>Croissant</figcaption>
+              <figcaption>London Tea</figcaption>
             </figure>
-            <h3>Croissant</h3>
-            <p>Hojaldre crujiente</p>
+            <h3>London Tea (Earl Grey)</h3>
+            <p>Té negro con aceite de bergamota y un toque de lavanda.</p>
             <table>
               <thead>
                 <tr>
@@ -107,12 +130,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Clásico</td>
-                  <td>$38</td>
+                  <td>Caliente</td>
+                  <td>$45</td>
                 </tr>
                 <tr>
-                  <td>Chocolate</td>
-                  <td>$45</td>
+                  <td>Helado</td>
+                  <td>$50</td>
                 </tr>
               </tbody>
             </table>
@@ -120,176 +143,76 @@
         </div>
       </section>
 
-      <!-- === SECCIÓN VIDEO === -->
-      <section id="video" class="video">
-        <h2>Nuestro café en acción</h2>
-        <video controls autoplay muted loop>
-          <source
-            src="videos/Video_de_Mesero_Atendiendo_Cliente.mp4"
-            type="video/mp4"
-          />
-          Tu navegador no soporta el elemento de video.
-        </video>
-        <p>Conoce más sobre cómo preparamos cada taza de café con amor.</p>
-      </section>
-
-
-      <!-- === SECCIÓN MÚSICA === -->
-      <section id="musica" class="musica">
-        <h2>Música para acompañar tu café</h2>
-        <audio controls loop>
-          <source
-            src="musica/Pufino - Fantasy (freetouse.com).mp3"
-            type="audio/mpeg"
-          />
-          Tu navegador no soporta el elemento de audio.
-        </audio>
-        <p>Disfruta de nuestra selección musical mientras saboreas tu café.</p>
-      </section>
-
-      <!-- === SECCIÓN ARTÍCULOS === -->
-      <section id="articulos" aria-labelledby="titulo-articulos">
-        <h2 id="titulo-articulos">Artículos del blog</h2>
-        <div class="grid grid-2">
-          <div>
-            <article>
-              <h3>¿Qué es un espresso perfecto?</h3>
-              <p class="muted">
-                <time datetime="2025-08-26">Agosto de 2025</time> · 3 min de
-                lectura
-              </p>
-              <p>
-                Un espresso perfecto equilibra aroma, cuerpo y acidez. Factores
-                clave incluyen molienda...
-              </p>
-              <p><a href="#leer-mas-espresso">Leer más</a></p>
-            </article>
-            <article>
-              <h3>De la finca a tu taza</h3>
-              <p class="muted">
-                <time datetime="2025-08-26">Agosto de 2025</time> · 4 min de
-                lectura
-              </p>
-              <p>
-                El viaje del café inicia con la selección de granos, seguido de
-                procesos de secado y tueste...
-              </p>
-              <p><a href="#leer-mas-finca">Leer más</a></p>
-            </article>
+      <section id="reposteria" class="reposteria">
+        <h2>La Patisserie</h2>
+        <p class="muted" style="text-align:center;">Acompañamientos perfectos horneados cada mañana</p>
+        
+        <div class="grid-reposteria">
+          
+          <div class="tarjeta">
+            <div class="tarjeta-inner">
+              <div class="tarjeta-front">
+                <img
+                  src="/images/pastel de chocolate.jpg"
+                  alt="Pastel de Chocolate"
+                />
+                <h3>Royal Chocolate Cake</h3>
+              </div>
+              <div class="tarjeta-back">
+                <h3>Royal Chocolate Cake</h3>
+                <p>Bizcocho húmedo, ganache de chocolate belga y frutos rojos.</p>
+                <p><strong>$65 mxn</strong></p>
+              </div>
+            </div>
           </div>
-          <aside aria-label="Información adicional">
-            <h4>Horarios y ubicación</h4>
-            <address>
-              Blvd. Universidad 76, Hermosillo, Sonora<br />
-              Lun-Sáb: 8:00-20:00 · Dom: 9:00 - 14:00
-            </address>
-            <p class="muted">Wi-fi gratis · Pet friendly · Terraza</p>
-          </aside>
-        </div>
-      </section>
 
-      <!-- === SECCIÓN GALERÍA === -->
-      <section id="galeria" aria-labelledby="titulo-galeria">
-        <h2 id="titulo-galeria">Galería</h2>
-        <div class="grid grid-3">
-          <figure>
-            <img
-              src="/images/barista-cafequipos.jpg"
-              alt="Barista preparando café"
-              width="100%"
-              height="auto"
-            />
-            <figcaption>Barista en acción</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="/images/terraza.jpg"
-              alt="Terraza del café con mesas y plantas"
-              width="100%"
-              height="auto"
-            />
-            <figcaption>Nuestra terraza</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="/images/granos.webp"
-              alt="Granos de café tostados"
-              width="100%"
-              height="auto"
-            />
-            <figcaption>Granos seleccionados</figcaption>
-          </figure>
-        </div>
-
-        <section class="horarios">
-          <h2>Horarios de atención</h2>
-          <table>
-            <tr>
-              <th>Día</th>
-              <th>Horario</th>
-            </tr>
-            <tr>
-              <td>Lunes a viernes</td>
-              <td>8:00 - 20:00</td>
-            </tr>
-            <tr>
-              <td>Sábado</td>
-              <td>9:00 - 14:00</td>
-            </tr>
-            <tr>
-              <td>Domingo</td>
-              <td>08:00 - 14:00</td>
-            </tr>
-          </table>
-          <p class="frase">¡El café es lo máximo!</p>
-        </section>
-      </section>
-
-      <!-- === SECCIÓN ACERCA DE === -->
-      <section id="acerca" class="acerca-de">
-        <h2>Acerca de nosotros</h2>
-        <div class="contenido-acerca">
-          <img
-            src="/images/galeria1.webp"
-            alt="Taza de espresso"
-          />
-          <div class="texto">
-            <p>
-              En Cafetería Saul, nos apasiona el café de calidad y la
-              experiencia única que ofrecemos a nuestros clientes. Desde 2020,
-              hemos estado sirviendo bebidas artesanales y productos frescos en
-              un ambiente acogedor.
-            </p>
-            <p>
-              Nuestro equipo de baristas expertos se dedica a preparar cada taza
-              con precisión y cuidado, utilizando granos seleccionados de las
-              mejores regiones cafetaleras.
-            </p>
-            <p><strong>Misión:</strong> Servir experiencia, no solo café.</p>
+          <div class="tarjeta">
+            <div class="tarjeta-inner">
+              <div class="tarjeta-front">
+                <img
+                  src="/images/Croissant.jpg"
+                  alt="Croissant"
+                />
+                <h3>Croissant Francés</h3>
+              </div>
+              <div class="tarjeta-back">
+                <h3>Croissant Francés</h3>
+                <p>Mantequilla importada, hojaldre crujiente y dorado.</p>
+                <p><strong>$45 mxn</strong></p>
+              </div>
+            </div>
           </div>
+
+          <div class="tarjeta">
+            <div class="tarjeta-inner">
+              <div class="tarjeta-front">
+                <img
+                  src="/images/scones.jpg"
+                  alt="Scones Ingleses"
+                />
+                <h3>English Scones</h3>
+              </div>
+              <div class="tarjeta-back">
+                <h3>English Scones</h3>
+                <p>Panecillos tradicionales servidos con mermelada y crema.</p>
+                <p><strong>$50 mxn</strong></p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <!-- === SECCIÓN MAPA === -->
-      <section id="mapa" class="mapa">
-        <h2>Encuéntranos aquí</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13948.038199483215!2d-110.98053932189943!3d29.075862772036036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce8561332e96e9%3A0x2568d794e734db0b!2sCaf%C3%A9%20Central!5e0!3m2!1ses-419!2smx!4v1759772445361!5m2!1ses-419!2smx"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen
-          loading="lazy"
-        >
-        </iframe>
-        <p class="direccion">
-          Calle Café Aroma #123, Hermosillo, Sonora<br />Tel. (662) 409-0000
+      <section id="promo" class="promo">
+        <p class="promo-titulo">Tea Time Special</p>
+        <p class ="promo-detalle"> 2x1 en toda la repostería de 5:00 PM a 6:00 PM</p>
+        <p class="promo-tiempo">
+          La oferta termina en: <span id="promoSegundos">30</span> segundos
         </p>
       </section>
 
-      <!-- === SECCIÓN CARRUSEL === -->
       <section id="carrusel" class="carrusel">
-        <h2>Galería de nuestra cafetería</h2>
+        <h2>Nuestros Espacios</h2>
         <div class="contenedor-carrusel">
           <div class="slides">
             <input type="radio" name="nav" id="slide1" checked />
@@ -309,22 +232,120 @@
               />
               <img
                 src="/images/galeria4.png"
-                alt="Capuccino artesanal"
+                alt="Detalles de la cafetería"
                 width="100%"
                 height="auto"
               />
             </div>
           </div>
           <div class="navegacion">
-            <label for="slide1" class="btn">&#10094;</label>
-            <label for="slide2" class="btn">&#10095;</label>
+            <label for="slide1" class="btn">❮</label>
+            <label for="slide2" class="btn">❯</label>
           </div>
         </div>
       </section>
 
-      <!-- === SECCIÓN CONTACTO === -->
+      <div class="grid grid-2">
+        <section id="video" class="video" style="margin-bottom: 0;">
+            <h2>El Arte del Café</h2>
+            <video controls muted loop>
+              <source
+                src="videos/Video_de_Mesero_Atendiendo_Cliente.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Nuestra dedicación en movimiento.</p>
+        </section>
+
+        <section id="musica" class="musica" style="margin-bottom: 0;">
+            <h2>Ambiente Sonoro</h2>
+            <audio controls loop>
+              <source
+                src="musica/Pufino - Fantasy (freetouse.com).mp3"
+                type="audio/mpeg"
+              />
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Jazz y acústico para acompañar tu lectura.</p>
+        </section>
+      </div>
+      <br><br>
+
+      <section id="articulos" aria-labelledby="titulo-articulos">
+        <h2 id="titulo-articulos">El Blog del Café</h2>
+        <div class="grid grid-2">
+            <article>
+              <h3>La etiqueta del té</h3>
+              <p class="muted">
+                <time datetime="2025-08-26">Agosto de 2025</time> · 3 min de lectura
+              </p>
+              <p>
+                Descubre las reglas de etiqueta para disfrutar un té al estilo inglés...
+              </p>
+              <p><a href="#leer-mas-te">Leer más</a></p>
+            </article>
+            <article>
+              <h3>Orígenes del grano</h3>
+              <p class="muted">
+                <time datetime="2025-08-26">Agosto de 2025</time> · 4 min de lectura
+              </p>
+              <p>
+                Desde Etiopía hasta tu taza, el viaje de nuestros granos selectos...
+              </p>
+              <p><a href="#leer-mas-finca">Leer más</a></p>
+            </article>
+        </div>
+      </section>
+
+      <section id="ubicacion-horarios">
+        <h2 style="text-align: center;">Visítanos</h2>
+        
+        <div class="grid grid-2">
+            <section id="mapa" class="mapa" style="border-top: none; padding-top: 0;">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13948.038199483215!2d-110.98053932189943!3d29.075862772036036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ce8561332e96e9%3A0x2568d794e734db0b!2sCaf%C3%A9%20Central!5e0!3m2!1ses-419!2smx!4v1759772445361!5m2!1ses-419!2smx"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen
+                  loading="lazy"
+                >
+                </iframe>
+                <p class="direccion">
+                  <strong>Blvd. Universidad 76</strong><br>
+                  Hermosillo, Sonora<br>
+                  Tel. (662) 409-0000
+                </p>
+            </section>
+
+            <section class="horarios" style="border-top: none; padding-top: 0;">
+                <h3 style="color: #6f4e37; margin-bottom: 15px;">Horario de Servicio</h3>
+                <table>
+                  <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                  </tr>
+                  <tr>
+                    <td>Lunes a viernes</td>
+                    <td>8:00 AM - 8:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Sábado</td>
+                    <td>9:00 AM - 2:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td>Domingo</td>
+                    <td>Closed (Cerrado)</td>
+                  </tr>
+                </table>
+                <p class="frase">"Better latte than never"</p>
+            </section>
+        </div>
+      </section>
+
       <section id="contacto" aria-labelledby="titulo-contacto">
-        <h2 id="titulo-contacto">Contacto</h2>
+        <h2 id="titulo-contacto">Contáctanos</h2>
         <form action="#" method="post">
           <div>
             <label for="nombre">Nombre</label>
@@ -337,7 +358,7 @@
             />
           </div>
           <div>
-            <label for="correo">Correo</label>
+            <label for="correo">Correo Electrónico</label>
             <input
               type="email"
               name="correo"
@@ -352,52 +373,20 @@
               name="mensaje"
               id="mensaje"
               rows="4"
-              placeholder="¿En qué podemos ayudarte?"
+              placeholder="¿Deseas reservar una mesa?"
             ></textarea>
           </div>
-          <button type="submit">Enviar</button>
-          <p class="muted">*Este formulario es solo de ejemplo.</p>
+          <button type="submit">Enviar Mensaje</button>
+          <p class="muted">*Este formulario es demostrativo.</p>
         </form>
       </section>
-      <!--- === SECCIÓN PROMOCIÓN === -->
-      <section id="promo" class="promo">
-        <p class="promo-titulo">Promocion especial de cafe Saul </p>
-        <p class ="promo-detalle"> 2x1 en frappes de vainilla durante tiempo limitado</p>
-        <p class="promo-tiempo">
-          La promocion termina en: <span id="promoSegundos">30</span> segundos
-        </p>
-      </section>
 
-      <section id="reposteria" class="reposteria">
-        <h2>Menu de reposteria</h2>
-        <div class="grid-reposteria">
-          <div class="tarjeta">
-            <div class="tarjeta-inner">
-              <!-- Cara frontal -->
-              <div class="tarjeta-front">
-                <img
-                  src="https://picsum.photos/seed/pastel/300/200"
-                  alt="Pastel de chocolate"
-                />
-                <h3>Pastel de Chocolate</h3>
-            </div>
-              <div class="tarjeta-back">
-                <h3>pastel de chocolate</h3>
-                <p>cremoso, recien horneado, 3 leches</p>
-                <p><strong>$50 mxn</strong></p>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer>
       <div class="container">
         <p>
-          <span id="año">2025</span> Cafetería Saul - Todos los derechos
-          reservados.
+          <span id="año">2025</span> Cafetería Saul & Co. - Todos los derechos reservados.
         </p>
         <nav aria-label="Navegación secundaria">
           <ul>
@@ -405,11 +394,11 @@
             <li><a href="#terminos">Términos de uso</a></li>
           </ul>
         </nav>
-        <small class="muted">Sitio de ejemplo</small>
+        <small class="muted">Diseño Web Estilo Inglés</small>
       </div>
-      <a href="tel:+526622215525" class="btn-footer"
-        >Llamar al (662) 221-5525</a
-      >
+      <a href="tel:+526622215525" class="btn-footer">
+        Reservaciones: (662) 221-5525
+      </a>
       <p><a href="mailto:cafecontacto@gmail.com">cafecontacto@gmail.com</a></p>
     </footer>
 
